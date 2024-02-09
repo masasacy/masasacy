@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Саса (@masasacy)</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-</head>
-<body>
-    <header>
-
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sasa (@masasacy)</title>
+        <link rel="icon" type="image/x-icon" href="img/img-profile.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+    </head>
+    <body class="light">
+        <header>
+            <nav>
+                <div class="photo-and-name">
+                    <a href="index.html">
+                        <img class="photo" alt="Profile photo" src="img/img-profile.svg">
+                        <p class="name">Sasa (@masasacy)</p>
+                    </a>
+                </div>
+                <img onclick="switchMode()" id="mode" src="img/icon-dark-mode.svg" alt="Mode">
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <p>Ahlan wa sahlan! ⛅</p>
+                <h1>I'm Sasa, <br> 
+                    a <span></span></h1>
+                <a href="#about-me"><button class="primary-button">Read more ↓</button></a>
+            </div>
+            <div class="contents">
+                
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="contact-buttons">
+                    <p>Sasa (@masasacy)</p>
+                    <ul>
+                        <li><a href="https://instagram.com/masasacy"><img class="contact-button" src="img/icon-instagram.svg" alt="Instagram icon"></a></li>
+                        <li><a href="https://t.me/masasacy"><img class="contact-button" src="img/icon-telegram.svg" alt="Telegram icon"></a></li>
+                        <li><a href="mailto:masasacy@gmail.com"><img class="contact-button" src="img/icon-email.svg" alt="Email icon"></a></li>
+                    </ul>
+                </div>
+                <div class="last">
+                    <p>Icons by <a href="https://fonts.google.com/icons">Material Symbols</a> and <a href="https://fontawesome.com/">Font Awesome</a></p>
+                </div>
+            </div>
+        </footer>
+        <script src="/scripts/main.js"></script>
+    </body>
 </html>

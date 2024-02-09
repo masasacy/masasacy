@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root {
+    /* Font sizes */
+    --headline-1: 48px;
+    --headline-2: 32px;
+    --headline-3: 22px;
+    --headline-4: 20px;
+    --body-large: 18px;
+    --body-medium: 16px;
+
+    /* Colors */
+    --brown-primary: #686459;
+    --brown-span: #857d68;
+    --brown-darker: #787367;
+    --brown-span-lighter: #d1c7b0;
+    --brown-secondary: #fffefc;
+    --brown-tertiary: #f5f5f5;
+    --brown-tertiary-nav: #f5f5f5ee;
+    --black-primary: #121212;
+    --black-primary-nav: #121212aa;
+    --black-secondary: #3b3939;
+    --black-tertiary: #2a2929;
+}
+
+.light {
+    --navBg: var(--brown-tertiary-nav);
+    --primaryBg: var(--brown-tertiary);
+    --darkText: var(--black-primary);
+    --lightText: var(--brown-secondary);
+    --brownSpan: var(--brown-primary);
+    --buttonShadow: var(--black-primary);
+    --cardBg: var(--brown-secondary);
+    --chipHover: var(--brown-tertiary);
+    --last: var(--black-primary);
+}
+
+.dark {
+    --navBg: var(--black-primary-nav);
+    --primaryBg: var(--black-primary);
+    --darkText: var(--brown-secondary);
+    --lightText: var(--black-primary);
+    --brownSpan: var(--brown-span-lighter);
+    --buttonShadow: var(--black-secondary);
+    --cardBg: var(--black-tertiary);
+    --chipHover: var(--black-secondary);
+    --last: var(--black-tertiary);
+}
+
+/* Heading */
+h1 {
+    font-size: var(--headline-1);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--headline-2);
+}
+
+h3 {
+    font-size: var(--headline-3);
+}
+
+h4 {
+    font-size: var(--headline-4);
+}
+
+p, ul {
+    line-height: 1.5;
+}
+
+a {
+    color: var(--brownSpan);
+}
+
+a:hover {
+    color: var(--brownSpan);
+}
+
+/* Body */
+body {
+    background-color: var(--primaryBg);
+    color: var(--darkText);
+}
+
+/* Top navigation */
+nav {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navBg);
+    font-size: var(--body-large);
+    position: fixed;
+    width: 100%;
+}
+
+.photo-and-name a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--darkText);
+    font-weight: 700;
+    gap: 8px;
+}
+
+.photo {
+    width: 32px;
+} 
+
+#mode {
+    cursor: pointer;
+    width: 24px;
+}
+
+/* Hero section */
+.hero {
+    height: 600px;
+    color: var(--darkText);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.hero p {
+    font-size: var(--headline-3);
+}
+
+.hero button {
+    font-size: var(--body-large);
+    color: var(--brown-secondary);
+}
+
+span {
+    color: var(--brownSpan);
+    overflow: hidden;
+}
+
+span::before {
+    content: "Web Developer 🌐";
+    animation: animate infinite 5s;
+}
+
+@keyframes animate {
+    50% {
+        content: "Language Learner 🌏";
+    }
+}
+
+.primary-button {
+    height: 48px;
+    width: fit-content;
+    padding: 0 24px;
+    background: var(--brown-primary);
+    border-radius: 100px;
+    border: none;
+    box-shadow: 4px 4px var(--buttonShadow);
+}
+
+.primary-button:hover {
+    background: var(--brown-span);
+    color: var(--brown-secondary);
+    cursor: pointer;
+}
+
+.primary-button a {
+    color: var(--brown-secondary);
+    text-decoration: none;
+    font-size: var(--body-large);
+}
+
+
+
+footer {
+    position: absolute;
+    width: 100%;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--brown-primary);
+    padding: 24px;
+    color: var(--brown-secondary);
+    gap: 8px;
+    font-size: var(--headline-4);
+    text-align: center;
+}
+
+.contact-buttons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.contact-buttons li {
+    list-style-type: none;
+}
+
+.contact-button {
+    height: 24px;
+}
+
+.last {
+    background: var(--last);
+    text-align: center;
+    color: var(--brown-secondary);
+    padding: 16px;
+}
+
+.last a {
+    color: var(--brown-secondary);
+}
+
+.last a:hover {
+    color: var(--brown-tertiary);
+}
