@@ -1,11 +1,3 @@
-// Scroll to the bottom when click "Contact" button on aside ("Contents")
-document.getElementById("scroll-to-bottom").addEventListener("click", function() {
-    document.body.scrollIntoView ( {
-        behavior: "smooth",
-        block: "end"
-    });
-});
-
 // Switch mode
 document.getElementById("mode").addEventListener('click',() => {
     document.body.classList.toggle('dark');

@@ -72,6 +72,7 @@ h4 {
 
 p, ul {
     line-height: 1.5;
+    font-size: var(--body-large);
 }
 
 a {
@@ -93,7 +94,7 @@ nav {
     z-index: 2;
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 16px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--navBg);
@@ -118,6 +119,19 @@ nav {
     width: 32px;
 } 
 
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+#cta-nav {
+    height: 32px;
+    padding: 0 16px;
+}
+
+
 #mode {
     cursor: pointer;
     width: 24px;
@@ -125,7 +139,7 @@ nav {
 
 /* Hero section */
 .hero {
-    height: 600px;
+    height: 560px;
     color: var(--darkText);
     display: flex;
     flex-direction: column;
@@ -168,6 +182,7 @@ span::before {
     border-radius: 100px;
     border: none;
     box-shadow: 4px 4px var(--buttonShadow);
+    color: var(--brown-secondary);
 }
 
 .primary-button:hover {
@@ -176,13 +191,95 @@ span::before {
     cursor: pointer;
 }
 
-.primary-button a {
-    color: var(--brown-secondary);
-    text-decoration: none;
-    font-size: var(--body-large);
+.contents {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 48px;
+    align-content: center;
+    padding: 48px 0;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 16px;
+    max-width: 80vw;
+    scroll-margin-top: 80px;
+}
 
+.description {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px;
+}
+
+.skills-chips ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+}
+
+.skills-item {
+    list-style-type: none;
+    padding: 8px 16px;
+    border: 1px solid var(--brown-primary);
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 24px;
+}
+
+.project {
+    display: flex;
+    flex-flow: column;
+    background: var(--brown-secondary);
+    border-radius: 16px;
+    box-shadow: 4px 4px var(--brown-primary);
+    max-width: 500px;
+}
+
+.project img {
+    height: 192px;
+    border-radius: 16px 16px 0 0;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.project-detail h3 {
+    color: var(--black-primary);
+}
+
+.project-detail p {
+    font-size: var(--body-medium);
+    color: var(--black-primary);
+}
+
+.project-detail a {
+    color: var(--brown-primary);
+}
+
+.status {
+    padding: 4px 8px;
+    background: rgb(232, 244, 232);
+    border: 1px solid rgb(52, 112, 52);
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.status p {
+    font-size: var(--body-medium);
+    color: rgb(52, 112, 52);
+}
 
 footer {
     position: absolute;

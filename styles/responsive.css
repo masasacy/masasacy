@@ -4,20 +4,18 @@
         /* Font sizes */
         --headline-1: 26px;
         --headline-2: 24px;
+        --headline-3: 20px;
+        --body-large: 16px;
+        --body-medium: 14px;
+    }
+
+    .hero {
+        height: 400px;
+        margin-bottom: 0px;
     }
 
     .contents {
-        flex-direction: column;
-    }
-
-    aside {
-        order: 0;
-        position: static;
-        margin-bottom: 6vw;
-    }
-
-    .content {
-        order: 1
+        padding: 16px 0 48px 0;
     }
 }
 
