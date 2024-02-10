@@ -15,7 +15,7 @@
     --body-medium: 16px;
 
     /* Colors */
-    --brown-primary: #686459;
+    --brown-primary: #555248;
     --brown-span: #857d68;
     --brown-darker: #787367;
     --brown-span-lighter: #d1c7b0;
@@ -193,19 +193,30 @@ span::before {
 
 .contents {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     gap: 48px;
-    align-content: center;
-    padding: 48px 0;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 16px;
-    max-width: 80vw;
     scroll-margin-top: 80px;
+    width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 64px 0;
+    gap: 24px;
+}
+
+#about {
+    background: var(--brown-primary);
+    color: var(--brown-secondary);
 }
 
 .description {
@@ -253,7 +264,7 @@ span::before {
 .project-detail {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 16px 0;
     gap: 8px;
 }
 
