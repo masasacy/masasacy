@@ -241,11 +241,13 @@ span::before {
     border-radius: 16px;
     box-shadow: 4px 4px var(--brown-primary);
     max-width: 500px;
+    padding: 16px;
 }
 
 .project img {
-    height: 192px;
-    border-radius: 16px 16px 0 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .project-detail {
