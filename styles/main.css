@@ -194,7 +194,6 @@ span::before {
 .contents {
     display: flex;
     flex-direction: column;
-    gap: 48px;
 }
 
 .content {
@@ -217,12 +216,17 @@ span::before {
 #about {
     background: var(--brown-primary);
     color: var(--brown-secondary);
+    padding: 48px;
 }
 
 .description {
     display: flex;
     flex-flow: column wrap;
     gap: 16px;
+}
+
+#skills {
+    padding: 64px 0 0 0;
 }
 
 .skills-chips ul {
@@ -233,10 +237,17 @@ span::before {
 
 .skills-item {
     list-style-type: none;
-    padding: 8px 16px;
-    border: 1px solid var(--brown-primary);
-    border-radius: 100px;
-    width: fit-content;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: var(--brown-secondary);
+    box-shadow: 4px 4px var(--brown-primary);
 }
 
 .projects-list {
@@ -281,7 +292,20 @@ span::before {
     color: var(--brown-primary);
 }
 
-.status {
+.in-progress {
+    padding: 4px 8px;
+    background: rgb(255, 250, 241);
+    border: 1px solid rgb(232, 151, 0);
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.in-progress p {
+    font-size: var(--body-medium);
+    color: rgb(232, 151, 0);
+}
+
+.completed {
     padding: 4px 8px;
     background: rgb(232, 244, 232);
     border: 1px solid rgb(52, 112, 52);
@@ -289,7 +313,7 @@ span::before {
     width: fit-content;
 }
 
-.status p {
+.completed p {
     font-size: var(--body-medium);
     color: rgb(52, 112, 52);
 }

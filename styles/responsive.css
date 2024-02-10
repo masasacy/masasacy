@@ -17,6 +17,27 @@
     .contents {
         padding: 16px 0 48px 0;
     }
+
+    #about {
+        padding: 0;
+    }
+
+    #skills {
+        padding: 48px 0 0 0;
+    }
+
+    .skills-chips ul {
+        flex-flow: column wrap;
+    }
+
+    .skills-item {
+        width: auto;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
