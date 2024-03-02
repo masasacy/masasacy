@@ -250,6 +250,10 @@ span::before {
     box-shadow: 4px 4px var(--brown-primary);
 }
 
+.skill-name {
+    color: var(--black-primary);
+}
+
 .projects-list {
     display: grid;
     grid-template-columns: auto auto auto;
