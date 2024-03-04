@@ -2,7 +2,7 @@
 @media screen and (max-width: 600px) {
     :root {
         /* Font sizes */
-        --headline-1: 26px;
+        --headline-1: 18px;
         --headline-2: 24px;
         --headline-3: 20px;
         --body-large: 16px;
@@ -10,7 +10,7 @@
     }
 
     .hero {
-        height: 400px;
+        height: 95vh;
         margin-bottom: 0px;
     }
 
