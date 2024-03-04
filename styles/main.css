@@ -7,7 +7,7 @@
 
 :root {
     /* Font sizes */
-    --headline-1: 48px;
+    --headline-1: 40px;
     --headline-2: 32px;
     --headline-3: 22px;
     --headline-4: 20px;
@@ -338,6 +338,11 @@ footer {
     gap: 8px;
     font-size: var(--headline-4);
     text-align: center;
+}
+
+.contact-buttons p {
+    color: var(--brown-secondary);
+    text-decoration: underline;
 }
 
 .contact-buttons ul {
