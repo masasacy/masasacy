@@ -9,6 +9,11 @@
         --body-medium: 14px;
     }
 
+    /* Padding */
+    .details {
+        padding: 16px;
+    }
+
     .hero {
         height: 95vh;
         margin-bottom: 0px;
