@@ -49,10 +49,6 @@ So that's why now I open volunteering opportunities for designers & developers o
 ## Volunteer opportunities
 We're working remotely, with asynchronous communications (no online meetings). This project may be suitable for you who love working culture like that and are looking for volunteering experience in working on a real project, that focuses on the Arabic language and education fields.
 
-We open volunteering opportunities for:
-
-1. UI/UX designer (1 person)
-
 Then what are the benefits you'll get?
 
 I can't promise anything. Currently, we are building this as a free web app, non-profit, and open-source project, so we don't get paid for it. May Allah grant rewards to everyone who is willing to contribute.
